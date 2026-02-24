@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Mahasiswa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ffd6e8, #d6f0ff);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            padding: 15px 30px;
+            background: rgba(255,255,255,0.6);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        nav a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: #ff6fa5;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff3d8b;
+        }
+
+        section {
+            margin-top: 50px;
+            background: white;
+            padding: 30px;
+            width: 350px;
+            border-radius: 25px;
+            box-shadow: 0 15px 35px rgba(255, 182, 193, 0.3);
+            text-align: center;
+        }
+
+        h2 {
+            color: #ff6fa5;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+            font-weight: 500;
+            color: #666;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 15px;
+            border: 1px solid #eee;
+            background: #f9f9ff;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        input:focus, select:focus {
+            border-color: #ff9ecf;
+            box-shadow: 0 0 0 3px rgba(255, 182, 193, 0.2);
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #ff9ecf, #ff6fa5);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(255, 105, 180, 0.3);
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 15px;
+            color: #888;
+            font-size: 14px;
+        }
+
+        @media(max-width: 500px){
+            section {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">🏠 Home</a>
+        <a href="blog.html">🌸 Blog</a>
+        <a href="contact.html">💌 Contact</a>
+    </nav>
+</header>
+
+<section>
+    <h2>✨ Form Input Mahasiswa ✨</h2>
+    <form action="submit.php" method="post" target="_blank">
+        
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama">
+
+        <label for="npm">NPM</label>
+        <input type="text" id="npm" name="npm" placeholder="Masukkan NPM">
+
+        <label for="kelas">Kelas</label>
+        <select id="kelas" name="kelas">
+            <option value="">Pilih kelas</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+        </select>
+
+        <label for="tanggal">Tanggal</label>
+        <input type="date" id="tanggal" name="tanggal">
+
+        <label for="waktu">Waktu</label>
+        <input type="time" id="waktu" name="waktu">
+
+        <button type="submit">💖 Submit</button> 
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 • Cute Student App 🌷</p>
+</footer>
+
+</body>
+</html>
